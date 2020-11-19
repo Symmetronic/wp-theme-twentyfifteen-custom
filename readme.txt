@@ -1,3 +1,7 @@
+This is a custom modification to the Twenty Fifteen WordPress theme.
+
+
+
 === Twenty Fifteen ===
 Contributors: wordpressdotorg
 Requires at least: WordPress 4.1
