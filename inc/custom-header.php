@@ -8,6 +8,14 @@
  */
 
 /**
+ * Modifications:
+ * 
+ * - Update secondary header background color small screens to match header color.
+ * 
+ * Last modified 2020-11-20.
+ */
+
+/**
  * Set up the WordPress core custom header feature.
  *
  * @uses twentyfifteen_header_style()
@@ -215,7 +223,8 @@ function twentyfifteen_header_background_color_css() {
 	$css = '
 		/* Custom Header Background Color */
 		body:before,
-		.site-header {
+		.site-header,
+		.secondary {
 			background-color: %1$s;
 		}
 
