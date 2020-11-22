@@ -12,22 +12,40 @@
 /**
  * Modifications:
  * 
- * - Remove "Proudly powered by WordPress" note
+ * - Remove "Proudly powered by WordPress" note.
+ * - Add footer navigation menu.
  * 
- * Last modified 2020-11-19.
+ * Last modified 2020-11-22.
  */
 ?>
 
 	</div><!-- .site-content -->
 
 	<?php
-	if ( function_exists( 'the_privacy_policy_link' ) ) {
-		the_privacy_policy_link(
-			'<footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">',
-			'</div></footer>'
-		);
-	}
-	?>
+	if ( function_exists( 'the_privacy_policy_link' ) || has_nav_menu( 'footer' ) ) : ?>
+	  <footer id="colophon" class="site-footer" role="contentinfo">
+		  <div class="site-info">
+				<?php
+				if ( function_exists( 'the_privacy_policy_link' ) ) {
+					the_privacy_policy_link( '', '' );
+				}
+				?>
+				<?php if ( has_nav_menu( 'footer' ) ) : ?>
+					<nav id="footer-navigation" class="footer-navigation" role="navigation">
+						<?php
+							// Footer navigation menu.
+							wp_nav_menu(
+								array(
+									'theme_location' => 'footer',
+									'depth'          => 1,
+								)
+							);
+						?>
+					</nav><!-- .footer-navigation -->
+				<?php endif; ?>
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	<?php endif; ?>
 
 </div><!-- .site -->
 

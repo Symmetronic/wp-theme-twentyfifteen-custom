@@ -26,6 +26,14 @@
  */
 
 /**
+ * Modifications:
+ * 
+ * - Add footer navigation menu.
+ * 
+ * Last modified 2020-11-22.
+ */
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  *
  * @since Twenty Fifteen 1.0
@@ -85,6 +93,7 @@ if ( ! function_exists( 'twentyfifteen_setup' ) ) :
 			array(
 				'primary' => __( 'Primary Menu', 'twentyfifteen' ),
 				'social'  => __( 'Social Links Menu', 'twentyfifteen' ),
+				'footer' => __( 'Footer Menu', 'twentyfifteen' ),
 			)
 		);
 
