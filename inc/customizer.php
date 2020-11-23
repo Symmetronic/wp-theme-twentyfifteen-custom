@@ -8,6 +8,14 @@
  */
 
 /**
+ * Modifications:
+ * 
+ * - Link menu background color to sidebar background color.
+ * 
+ * Last modified 2020-11-23.
+ */
+
+/**
  * Add postMessage support for site title and description for the Customizer.
  *
  * @since Twenty Fifteen 1.0
@@ -411,14 +419,14 @@ function twentyfifteen_get_color_scheme_css( $colors ) {
 
 	/* Sidebar Background Color */
 	body:before,
-	.site-header {
+	.site-header,
+	.secondary {
 		background-color: {$colors['header_background_color']};
 	}
 
 	/* Box Background Color */
 	.post-navigation,
 	.pagination,
-	.secondary,
 	.site-footer,
 	.hentry,
 	.page-header,
