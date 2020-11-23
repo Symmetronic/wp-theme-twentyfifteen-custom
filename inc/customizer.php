@@ -11,6 +11,7 @@
  * Modifications:
  * 
  * - Link menu background color to sidebar background color.
+ * - Add gray color scheme.
  * 
  * Last modified 2020-11-23.
  */
@@ -197,6 +198,17 @@ function twentyfifteen_get_color_schemes() {
 					'#333333',
 					'#333333',
 					'#f7f7f7',
+				),
+			),
+			'gray'    => array(
+				'label'  => __( 'Gray', 'twentyfifteen' ),
+				'colors' => array(
+					'#ffffff',
+					'#f1f1f1',
+					'#ffffff',
+					'#333333',
+					'#333333',
+					'#f1f1f1',
 				),
 			),
 			'dark'    => array(
