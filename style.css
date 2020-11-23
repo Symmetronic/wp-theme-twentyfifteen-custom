@@ -21,6 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * - Remove box-shadows and borders to achieve completely flat look.
  * - Add card style class.
  * - Add footer navigation menu style.
+ * - Set maximum logo height to 48px.
  *
  * Last modified 2020-11-23.
  */
@@ -1339,7 +1340,7 @@ img.aligncenter {
 }
 
 .custom-logo {
-	max-height: 84px;
+	max-height: 48px;
 	width: auto;
 }
 
@@ -3160,10 +3161,6 @@ p > video {
 		line-height: 1.2069;
 	}
 
-	.custom-logo {
-		max-height: 105px;
-	}
-
 	.wp-custom-logo .site-title {
 		margin-top: 0.482758621em;
 	}
@@ -3798,10 +3795,6 @@ p > video {
 		font-size: 32px;
 		font-size: 3.2rem;
 		line-height: 1.25;
-	}
-
-	.custom-logo {
-		max-height: 104px;
 	}
 
 	.wp-custom-logo .site-title {
@@ -4440,10 +4433,6 @@ p > video {
 		font-size: 22px;
 		font-size: 2.2rem;
 		line-height: 1.3636;
-	}
-
-	.custom-logo {
-		max-height: none;
 	}
 
 	.wp-custom-logo .site-title {
