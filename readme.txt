@@ -5,6 +5,7 @@ This is a custom modification to the Twenty Fifteen WordPress theme. The followi
 - Added footer menu.
 - Added "Gray" color scheme.
 - Added .card CSS style.
+- Set maximum logo height to 48 pixels.
 - Removed "Proudly powered by WordPress" footer note.
 
 
