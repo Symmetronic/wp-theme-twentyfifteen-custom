@@ -22,8 +22,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * - Add card style class.
  * - Add footer navigation menu style.
  * - Set maximum logo height to 48px.
+ * - Add go to top icon.
  *
- * Last modified 2020-11-23.
+ * Last modified 2020-11-24.
  */
 
 
@@ -198,7 +199,8 @@ a img {
 .format-link .entry-title a:after,
 .entry-content .more-link:after,
 .entry-summary .more-link:after,
-.author-link:after {
+.author-link:after,
+.go-to-top {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
@@ -948,13 +950,6 @@ a:focus {
 	position: relative;
 	top: 1px;
 	left: -1px;
-}
-
-.footer-navigation,
-.footer-navigation div,
-.footer-navigation ul,
-.footer-navigation li {
-	display: inline;
 }
 
 .footer-navigation ul {
@@ -2493,6 +2488,15 @@ a.post-thumbnail:focus {
 	content: '\002f';
 }
 
+.go-to-top a {
+	border: 0 !important;
+}
+
+.go-to-top a:before {
+	content: "\f435";
+	font-size: 32px;
+}
+
 /**
  * 14.0 Media
  */
@@ -2898,6 +2902,14 @@ p > video {
 	.site-footer {
 		margin: 0 7.6923%;
 		padding: 3.84615% 7.6923%;
+	}
+
+	.go-to-top {
+		float: right;
+	}
+
+	.footer-navigation li {
+		display: inline;
 	}
 
 	.post-navigation {

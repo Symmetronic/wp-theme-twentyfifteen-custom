@@ -3,6 +3,7 @@ This is a custom modification to the Twenty Fifteen WordPress theme. The followi
 - Removed shadows and borders to achieve a completely flat look.
 - Linked main menu background and link colors to header background and link colors.
 - Added footer menu.
+- Added go-to-top link with icon.
 - Added "Gray" color scheme.
 - Added .card CSS style.
 - Set maximum logo height to 48 pixels.

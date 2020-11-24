@@ -14,8 +14,9 @@
  * 
  * - Remove "Proudly powered by WordPress" note.
  * - Add footer navigation menu.
+ * - Add go-to-top link.
  * 
- * Last modified 2020-11-22.
+ * Last modified 2020-11-24.
  */
 ?>
 
@@ -25,9 +26,12 @@
 	if ( function_exists( 'the_privacy_policy_link' ) || has_nav_menu( 'footer' ) ) : ?>
 	  <footer id="colophon" class="site-footer" role="contentinfo">
 		  <div class="site-info">
+				<div aria-hidden="true" class="go-to-top">
+					<a href="#"></a>
+				</div>
 				<?php
 				if ( function_exists( 'the_privacy_policy_link' ) ) {
-					the_privacy_policy_link( '', '' );
+					the_privacy_policy_link( '<div class="privacy-policy">', '</div>' );
 				}
 				?>
 				<?php if ( has_nav_menu( 'footer' ) ) : ?>
