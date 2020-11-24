@@ -1611,8 +1611,6 @@ img.aligncenter {
 }
 
 .secondary.toggled-on {
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
 	display: block;
 }
 

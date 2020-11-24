@@ -617,8 +617,6 @@ function twentyfifteen_get_color_scheme_css( $colors ) {
 	.widget_categories .children,
 	.widget_nav_menu .sub-menu,
 	.widget_pages .children,
-	.site-header,
-	.site-footer,
 	.hentry + .hentry,
 	.author-info,
 	.entry-content .page-links a,
