@@ -10,9 +10,10 @@
 /**
  * Modifications:
  * 
- * - Update secondary header background color small screens to match header color.
+ * - Link menu background color to header background color.
+ * - Link menu link color to header link color.
  * 
- * Last modified 2020-11-20.
+ * Last modified 2020-11-24.
  */
 
 /**
@@ -275,12 +276,15 @@ function twentyfifteen_sidebar_text_color_css() {
 		/* Custom Sidebar Text Color */
 		.site-title a,
 		.site-description,
-		.secondary-toggle:before {
+		.secondary-toggle:before,
+		.secondary a {
 			color: %1$s;
 		}
 
 		.site-title a:hover,
-		.site-title a:focus {
+		.site-title a:focus,
+		.secondary a:hover,
+		.secondary a:focus, {
 			color: %1$s; /* Fallback for IE7 and IE8 */
 			color: %2$s;
 		}
@@ -302,7 +306,6 @@ function twentyfifteen_sidebar_text_color_css() {
 		}
 
 		@media screen and (min-width: 59.6875em) {
-			.secondary a,
 			.dropdown-toggle:after,
 			.widget-title,
 			.widget blockquote cite,
@@ -322,8 +325,6 @@ function twentyfifteen_sidebar_text_color_css() {
 				border-color: %1$s;
 			}
 
-			.secondary a:hover,
-			.secondary a:focus,
 			.main-navigation .menu-item-description,
 			.widget,
 			.widget blockquote,

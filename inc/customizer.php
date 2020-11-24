@@ -10,10 +10,11 @@
 /**
  * Modifications:
  * 
- * - Link menu background color to sidebar background color.
+ * - Link menu background color to header background color.
+ * - Link menu link color to header link color.
  * - Add gray color scheme.
  * 
- * Last modified 2020-11-23.
+ * Last modified 2020-11-24.
  */
 
 /**
@@ -654,13 +655,16 @@ function twentyfifteen_get_color_scheme_css( $colors ) {
 	}
 
 	.site-title a,
-	.site-description {
+	.site-description,
+	.secondary a {
 		color: {$colors['sidebar_textcolor']};
 	}
 
 	/* Sidebar Text Color */
 	.site-title a:hover,
-	.site-title a:focus {
+	.site-title a:focus,
+	.secondary a:hover,
+	.secondary a:focus {
 		color: {$colors['secondary_sidebar_textcolor']};
 	}
 
@@ -713,7 +717,6 @@ function twentyfifteen_get_color_scheme_css( $colors ) {
 		}
 
 		/* Sidebar Link Color */
-		.secondary a,
 		.dropdown-toggle:after,
 		.widget-title,
 		.widget blockquote cite,
@@ -734,8 +737,6 @@ function twentyfifteen_get_color_scheme_css( $colors ) {
 		}
 
 		/* Sidebar Text Color */
-		.secondary a:hover,
-		.secondary a:focus,
 		.main-navigation .menu-item-description,
 		.widget,
 		.widget blockquote,

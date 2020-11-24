@@ -1,7 +1,7 @@
 This is a custom modification to the Twenty Fifteen WordPress theme. The following modifications were made:
 
 - Removed shadows and borders to achieve a completely flat look.
-- Linked main menu background color to sidebar background color.
+- Linked main menu background and link colors to header background and link colors.
 - Added footer menu.
 - Added "Gray" color scheme.
 - Added .card CSS style.
