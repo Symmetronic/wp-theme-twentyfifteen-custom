@@ -16,7 +16,7 @@
  * - Add footer navigation menu.
  * - Add go-to-top link.
  * 
- * Last modified 2020-11-24.
+ * Last modified 2020-11-25.
  */
 ?>
 
@@ -27,7 +27,7 @@
 	  <footer id="colophon" class="site-footer" role="contentinfo">
 		  <div class="site-info">
 				<div aria-hidden="true" class="go-to-top">
-					<a href="#"></a>
+					<a href="#" tabindex="-1"></a>
 				</div>
 				<?php
 				if ( function_exists( 'the_privacy_policy_link' ) ) {
