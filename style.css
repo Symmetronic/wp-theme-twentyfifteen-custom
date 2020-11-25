@@ -2467,19 +2467,13 @@ a.post-thumbnail:focus {
 }
 
 .footer-about {
+	display: flex;
+	justify-content: space-between;
 	margin-top: 1.6em;
 }
 
 .footer-copyright {
-	display: inline-block;
 	font-weight: bold;
-	width: 80%;
-}
-
-.go-to-top {
-	display: inline-block;
-	text-align: right;
-	width: 19%;
 }
 
 .go-to-top a {
