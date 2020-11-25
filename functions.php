@@ -29,8 +29,9 @@
  * Modifications:
  * 
  * - Add footer navigation menu.
+ * - Remove "Noto" font.
  * 
- * Last modified 2020-11-22.
+ * Last modified 2020-11-25.
  */
 
 /**
