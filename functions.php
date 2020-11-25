@@ -180,7 +180,7 @@ if ( ! function_exists( 'twentyfifteen_setup' ) ) :
 		 * This theme styles the visual editor to resemble the theme style,
 		 * specifically font, colors, icons, and column width.
 		 */
-		add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css', twentyfifteen_fonts_url() ) );
+		add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css' ) );
 
 		// Load regular editor styles into the new block-based editor.
 		add_theme_support( 'editor-styles' );
@@ -286,74 +286,6 @@ function twentyfifteen_widgets_init() {
 }
 add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
 
-if ( ! function_exists( 'twentyfifteen_fonts_url' ) ) :
-	/**
-	 * Register Google fonts for Twenty Fifteen.
-	 *
-	 * @since Twenty Fifteen 1.0
-	 *
-	 * @return string Google fonts URL for the theme.
-	 */
-	function twentyfifteen_fonts_url() {
-		$fonts_url = '';
-		$fonts     = array();
-		$subsets   = 'latin,latin-ext';
-
-		/*
-		 * translators: If there are characters in your language that are not supported
-		 * by Noto Sans, translate this to 'off'. Do not translate into your own language.
-		 */
-		if ( 'off' !== _x( 'on', 'Noto Sans font: on or off', 'twentyfifteen' ) ) {
-			$fonts[] = 'Noto Sans:400italic,700italic,400,700';
-		}
-
-		/*
-		 * translators: If there are characters in your language that are not supported
-		 * by Noto Serif, translate this to 'off'. Do not translate into your own language.
-		 */
-		if ( 'off' !== _x( 'on', 'Noto Serif font: on or off', 'twentyfifteen' ) ) {
-			$fonts[] = 'Noto Serif:400italic,700italic,400,700';
-		}
-
-		/*
-		 * translators: If there are characters in your language that are not supported
-		 * by Inconsolata, translate this to 'off'. Do not translate into your own language.
-		 */
-		if ( 'off' !== _x( 'on', 'Inconsolata font: on or off', 'twentyfifteen' ) ) {
-			$fonts[] = 'Inconsolata:400,700';
-		}
-
-		/*
-		 * translators: To add an additional character subset specific to your language,
-		 * translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
-		 */
-		$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'twentyfifteen' );
-
-		if ( 'cyrillic' === $subset ) {
-			$subsets .= ',cyrillic,cyrillic-ext';
-		} elseif ( 'greek' === $subset ) {
-			$subsets .= ',greek,greek-ext';
-		} elseif ( 'devanagari' === $subset ) {
-			$subsets .= ',devanagari';
-		} elseif ( 'vietnamese' === $subset ) {
-			$subsets .= ',vietnamese';
-		}
-
-		if ( $fonts ) {
-			$fonts_url = add_query_arg(
-				array(
-					'family'  => urlencode( implode( '|', $fonts ) ),
-					'subset'  => urlencode( $subsets ),
-					'display' => urlencode( 'fallback' ),
-				),
-				'https://fonts.googleapis.com/css'
-			);
-		}
-
-		return $fonts_url;
-	}
-endif;
-
 /**
  * JavaScript Detection.
  *
@@ -372,9 +304,6 @@ add_action( 'wp_head', 'twentyfifteen_javascript_detection', 0 );
  * @since Twenty Fifteen 1.0
  */
 function twentyfifteen_scripts() {
-	// Add custom fonts, used in the main stylesheet.
-	wp_enqueue_style( 'twentyfifteen-fonts', twentyfifteen_fonts_url(), array(), null );
-
 	// Add Genericons, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.2' );
 
@@ -422,8 +351,6 @@ add_action( 'wp_enqueue_scripts', 'twentyfifteen_scripts' );
 function twentyfifteen_block_editor_styles() {
 	// Block styles.
 	wp_enqueue_style( 'twentyfifteen-block-editor-style', get_template_directory_uri() . '/css/editor-blocks.css', array(), '20190102' );
-	// Add custom fonts.
-	wp_enqueue_style( 'twentyfifteen-fonts', twentyfifteen_fonts_url(), array(), null );
 }
 add_action( 'enqueue_block_editor_assets', 'twentyfifteen_block_editor_styles' );
 
