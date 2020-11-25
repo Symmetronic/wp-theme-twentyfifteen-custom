@@ -8,6 +8,7 @@ This is a custom modification to the Twenty Fifteen WordPress theme. The followi
 - Added .card CSS style.
 - Removed external Google font "Noto" to improve performance.
 - Set maximum logo height to 48 pixels.
+- Added copyright information to footer.
 - Removed "Proudly powered by WordPress" footer note.
 
 
