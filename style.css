@@ -26,7 +26,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * - Remove "Noto" font.
  * - Increase tapping space of footer links.
  *
- * Last modified 2020-11-25.
+ * Last modified 2020-11-26.
  */
 
 
@@ -2469,7 +2469,7 @@ a.post-thumbnail:focus {
 .footer-about {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 1.6em;
+	margin-top: 1.2em;
 }
 
 .footer-copyright {
@@ -4433,6 +4433,14 @@ p > video {
 		font-size: 1.2rem;
 	}
 
+	.footer-links a {
+		padding-top: 0.5em;
+	}
+
+	.footer-about {
+		margin-top: 1em;
+	}
+
 	.widget {
 		font-size: 12px;
 		font-size: 1.2rem;
@@ -4958,10 +4966,6 @@ p > video {
 
 	.social-navigation a {
 		height: 2.8824em;
-	}
-
-	.go-to-top a:before {
-		font-size: 32px;
 	}
 
 	.post-password-form label,
