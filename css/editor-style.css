@@ -9,7 +9,7 @@ Description: Used to style the TinyMCE editor.
  * 
  * - Remove "Noto" font.
  *
- * Last modified 2020-11-25.
+ * Last modified 2020-11-26.
  */
 
 
@@ -31,19 +31,8 @@ Description: Used to style the TinyMCE editor.
  * 1.0 Body
  */
 
-body,
-button,
-input,
-label,
-select,
-textarea,
-blockquote
-cite,
-small,
-caption,
-figcaption {
+body {
 	color: #333;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 1.6471;
@@ -56,6 +45,20 @@ figcaption {
 /**
  * 2.0 Typography
  */
+
+body,
+button,
+input,
+label,
+select,
+textarea,
+blockquote
+cite,
+small,
+caption,
+figcaption {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
 h1,
 h2,
