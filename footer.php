@@ -17,20 +17,20 @@
  * - Add go-to-top link.
  * - Add copyright information.
  * 
- * Last modified 2020-11-25.
+ * Last modified 2020-11-26.
  */
 ?>
 
 	</div><!-- .site-content -->
 
-	<?php
-	if ( function_exists( 'the_privacy_policy_link' ) || has_nav_menu( 'footer' ) ) : ?>
+	<footer id="colophon" class="site-footer" role="contentinfo">
 
-	  <footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
 
-		  <div class="site-info">
+			<?php
+			if ( function_exists( 'the_privacy_policy_link' ) || has_nav_menu( 'footer' ) ) : ?>
 
-			  <div class="footer-links">
+				<div class="footer-links">
 
 					<?php
 					if ( function_exists( 'the_privacy_policy_link' ) ) {
@@ -54,25 +54,25 @@
 
 				</div><!-- .footer-links -->
 
-				<div class="footer-about">
+			<?php endif; ?>
 
-				  <div class="footer-copyright">
-					  &copy;
-						<?php echo date( 'Y' ) ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-					</div>
+			<div class="footer-about">
 
-					<div aria-hidden="true" class="go-to-top">
-						<a href="#" tabindex="-1"></a>
-					</div>
+				<div class="footer-copyright">
+					&copy;
+					<?php echo date( 'Y' ) ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+				</div><!-- .footer-copyright -->
 
-				</div><!-- .footer-about -->
+				<div aria-hidden="true" class="go-to-top">
+					<a href="#" tabindex="-1"></a>
+				</div><!-- .go-to-top -->
 
-			</div><!-- .site-info -->
+			</div><!-- .footer-about -->
 
-		</footer><!-- .site-footer -->
+		</div><!-- .site-info -->
 
-	<?php endif; ?>
+	</footer><!-- .site-footer -->
 
 </div><!-- .site -->
 
