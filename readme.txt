@@ -5,7 +5,6 @@ This is a custom modification to the Twenty Fifteen WordPress theme. The followi
 - Added footer menu.
 - Added go-to-top link with icon.
 - Added "Gray" color scheme.
-- Added .card CSS style.
 - Removed external Google font "Noto" to improve performance.
 - Set maximum logo height to 48 pixels.
 - Added copyright information to footer.

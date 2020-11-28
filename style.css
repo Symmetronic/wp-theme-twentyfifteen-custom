@@ -19,14 +19,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Modifications:
  * 
  * - Remove box-shadows and borders to achieve completely flat look.
- * - Add card style class.
  * - Add footer navigation menu style.
  * - Set maximum logo height to 48px.
  * - Add go to top icon.
  * - Remove "Noto" font.
  * - Increase tapping space of footer links.
  *
- * Last modified 2020-11-26.
+ * Last modified 2020-11-28.
  */
 
 
@@ -64,8 +63,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    16.6 - Desktop Large
  *    16.7 - Desktop X-Large
  * 17.0 - Print
- * 18.0 - Custom Classes
- *    18.1 - Card Style
  */
 
 
@@ -6107,69 +6104,5 @@ p > video {
 	.widecolumn {
 		margin: 7.6923% 0 0;
 		padding: 0;
-	}
-}
-
-
-/**
- * 18.0 Custom Classes
- */
-
-/**
- * 18.1 Card Style
- */
-
-.card {
-	background-color: rgba(0, 0, 0, 0.05);
-	margin-bottom: 2.4em;
-}
-
-.card > a {
-	border: none;
-}
-
-.card .card-img {
-	overflow: hidden;
-}
-
-.card .card-img img {
-  transition: transform 0.5s ease;
-}
-
-.card .card-img img:hover {
-	transform: scale(1.2);
-}
-
-.card .card-text {
-	padding: 1.5em 0.8em;
-}
-
-@media screen and (min-width: 38.75em) {
-	.card {
-		display: inline-block;
-		margin-right: 10%;
-		width: 44%;
-	}
-
-	.card:nth-child(even) {
-		margin-right: 0;
-	}
-
-	.card .card-img {
-		height: 10em;
-	}
-
-	.card .card-img img {
-		height: 100%;
-		margin: 0 auto;
-	}
-
-	.card .card-img img:hover {
-		transform: scale(1.2);
-	}
-
-	.card .card-text {
-		height: 8em;
-		overflow: hidden;
 	}
 }
